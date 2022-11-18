@@ -421,7 +421,7 @@
 					<p>Subscribe and get the latest news and useful tips, advice and best offer.</p>
 				</div>
 				</div>
-				<div class="col-md-7 col-lg-5">
+				<div class="col-md-7 col-lg-5">sss
 					<form class="newsletter">
 						<input type="text" placeholder="Enter your email">
 						<button class="site-btn">SUBSCRIBE</button>
