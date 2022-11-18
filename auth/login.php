@@ -32,7 +32,7 @@
 
         <form action="logincontroller.php" method="POST">
           <div class="input-group mb-3">
-            <input type="text" name="username" placeholder="masukkan username" required="" autofocus=""class="form-control">
+            <input type="text" name="username" placeholder="masukkan username" required="" autofocus="" class="form-control">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
