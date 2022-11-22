@@ -135,7 +135,7 @@
                 <div class="col-lg-8">
                     <div class="blog_left_sidebar">
                     <?php
-                        $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita ORDER BY idBerita DESC LIMIT 4) AS sub ORDER BY idBerita DESC;");
+                        $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita WHERE status_berita=1 ORDER BY idBerita DESC LIMIT 4) AS sub ORDER BY idBerita DESC;");
                         while ($baris   = mysqli_fetch_array($query)) {
                     ?>
                         <article class="row blog_item">
@@ -162,9 +162,7 @@
                                         <a href="berita-single.php?id=<?= $baris['idBerita']; ?>">
                                             <h2><?= $baris['judul_berita']; ?></h2>
                                         </a>
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
+                                        <p align="justify"><?= substr($baris['isi_berita'], 0, 500); ?></p>
                                         <a href="berita-single.php?id=<?= $baris['idBerita']; ?>" class="blog_btn">View More</a>
                                     </div>
                                 </div>

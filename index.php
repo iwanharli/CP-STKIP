@@ -39,6 +39,31 @@
 			.navbar .nav-item:hover .dropdown-menu{ display: block; background-color: #020031;}
 			.nabvar .nav-item .dropdown-menu{ margin-top:0; }
 		}
+		
+		.button {
+            background-color: #020031;
+            border: none;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0px 0px;
+        }
+
+        .button-round {border-radius: 50%;}
+
+        .widget .recent-post-widget .rp-thumb {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        .widget .recent-post-widget .rp-content {
+            padding-left: 0px;
+        }
 	</style>
 </head>
 <body>
@@ -193,15 +218,15 @@
 				<h3>Berita</h3>
 				<p>Kabar terkini terkait STKIP Lumajang</p>
 				<div class="text-right" style="padding-top: 20px;">
-                <a href="berita.php">
-                	<h6 style="color:#f6783a">Kunjungi Berita Kami &nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;</h6>
-                </a>
-            </div>
+					<a href="berita.php">
+						<h6 style="color:#f6783a">Kunjungi Berita Kami &nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;</h6>
+					</a>
+            	</div>
 			</div>
 			<div class="row">
 				<!-- course item -->
 				<?php
-                    $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita ORDER BY idBerita DESC LIMIT 6) AS sub ORDER BY idBerita DESC;");
+                    $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita WHERE status_berita=1 ORDER BY idBerita DESC LIMIT 6) AS sub ORDER BY idBerita DESC;");
                     while ($baris   = mysqli_fetch_array($query)) {
                 ?>
 
@@ -275,38 +300,33 @@
 	<section class="event-section spad">
 		<div class="container">
 			<div class="section-title text-center">
-				<h3>Kegiatan</h3>
-				<p>Kumpulan kegiatan STKIP Lumajang</p>
+				<h3>Pengumuman</h3>
+				<p>Daftar pengumuman terbaru</p>
+				<div class="text-right" style="padding-top: 20px;">
+					<a href="pengumuman.php">
+						<h6 style="color:#f6783a">Kunjungi Pengumuman Kami &nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;</h6>
+					</a>
+            	</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 event-item">
-					<a href="javascript:void(0)">
-						<div class="event-thumb">
-							<img src="img/event/1.jpg" alt="">
-							<div class="event-date">
-								<span>24 Mar 2018</span>
-							</div>
-						</div>
-						<div class="event-info">
-							<h4>The dos and don'ts of writing a personal<br>statement for languages</h4>
-							<p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
-						</div>
-					</a>
+				<?php
+					$query          = $koneksi->query("SELECT * FROM( SELECT * FROM pengumuman ORDER BY idPengumuman DESC LIMIT 6) AS sub ORDER BY tanggal_pengumuman DESC;");
+					$i = 1;
+
+					while ($baris   = mysqli_fetch_array($query)) {
+				?>
+
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/1.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4><a href="pengumuman-single.php?id=<?= $baris['idPengumuman']; ?>" style="word-break: break-all;"><?= $baris['judul_pengumuman']; ?></a></h4>
+						<p>(Detail Pengumuman) Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+					</div>
 				</div>
-				<div class="col-md-6 event-item">
-					<a href="javascript:void(0)">
-						<div class="event-thumb">
-							<img src="img/event/2.jpg" alt="">
-							<div class="event-date">
-								<span>22 Mar 2018</span>
-							</div>
-						</div>
-						<div class="event-info">
-							<h4>University interview tips:<br>confidence won't make up for flannel</h4>
-							<p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
-						</div>
-					</a>
-				</div>
+				
+				<?php } ?>
 			</div>
 		</div>
 	</section>
@@ -476,7 +496,7 @@
                     <h6 class="fw-title">Berita Terbaru</h6>
                     <ul class="recent-post">
                         <?php
-                            $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita ORDER BY idBerita DESC LIMIT 2) AS sub ORDER BY idBerita DESC;");
+                            $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita WHERE status_berita=1 ORDER BY idBerita DESC LIMIT 2) AS sub ORDER BY idBerita DESC;");
 
                             while ($baris   = mysqli_fetch_array($query)) {
                         ?>
