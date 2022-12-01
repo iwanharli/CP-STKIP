@@ -196,13 +196,13 @@
 			</div>
 			<div class="row">
 				<?php
-					$query          = $koneksi->query("SELECT * FROM( SELECT * FROM pengumuman ORDER BY idPengumuman DESC LIMIT 6) AS sub ORDER BY tanggal_pengumuman DESC;");
+					$query          = $koneksi->query("SELECT * FROM( SELECT * FROM pengumuman ORDER BY idPengumuman DESC LIMIT 2) AS sub ORDER BY tanggal_pengumuman DESC;");
 					$i = 1;
 
 					while ($baris   = mysqli_fetch_array($query)) {
 				?>
 
-				<div class="col-lg-4 col-sm-6 service-item">
+				<div class="col-lg-12 col-sm-6 service-item">
 					<div class="service-icon">
 						<img src="img/services-icons/1.png" alt="1">
 					</div>
@@ -249,94 +249,6 @@
 		</div>
 	</div>
 	<!-- Gallery section -->
-
-	<!-- Services section -->
-	<section class="service-section spad">
-		<div class="container services">
-			<div class="section-title text-center">
-				<h3>OUR SERVICES</h3>
-				<p>We provides the opportunity to prepare for life</p>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/1.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Art Studio</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/2.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Great Facility</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/3.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Activity Hub</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/4.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Fully Qualified</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/5.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Flexible Schedule</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/6.png" alt="1">
-					</div>
-					<div class="service-content">
-						<h4>Chemistry Lab</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Services section end -->
-
-	<!-- Newsletter section -->
-	<section class="newsletter-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 col-lg-7">
-					<div class="section-title mb-md-0">
-					<h3>NEWSLETTER</h3>
-					<p>Subscribe and get the latest news and useful tips, advice and best offer.</p>
-				</div>
-				</div>
-				<div class="col-md-7 col-lg-5">
-					<form class="newsletter">
-						<input type="text" placeholder="Enter your email">
-						<button class="site-btn">SUBSCRIBE</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Newsletter section end -->	
 
 
 	<!-- Footer section -->

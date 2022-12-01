@@ -295,21 +295,16 @@ header("location:../auth/login.php");
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="sejarah-update.php" id="aPages">Sejarah</a>
+                                    <a href="pages-update.php?id=8" id="aPages">Visi Misi</a>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="pages-update.php?id=9" id="aPages">Struktur Organisasi</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="visiMisi-update.php" id="aPages">Visi Misi</a>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="strukturOrganisasi-update.php" id="aPages">Struktur Organisasi</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="tujuan-update.php" id="aPages">Tujuan</a>
+                                    <a href="pages-update.php?id=10" id="aPages">Tujuan</a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -318,16 +313,22 @@ header("location:../auth/login.php");
                         </td>
                       </tr>
                     <tr>
-                      <td class="border-1">Pendaftaran Mahasiswa Baru</td>
+                      <td class="border-1">
+                        <a href="pages-update.php?id=3" id="aPages">Pendaftaran Mahasiswa Baru</a>
+                      </td>
                     </tr>
                     <tr>
-                      <td class="border-1">Prodi Bahasa & Sastra</td>
+                      <td class="border-1">
+                        <a href="pages-update.php?id=4" id="aPages">Prodi Bahasa & Sastra</a>
+                      </td>
                     </tr>
                     <tr>
                       <td class="border-1">Jurnal</td>
                     </tr>
                     <tr>
-                      <td class="border-1">Mahasiswa & Alumni</td>
+                      <td class="border-1">
+                        <a href="pages-update.php?id=6" id="aPages">Mahasiswa & Alumni</a>
+                      </td>
                     </tr>
                     <tr data-widget="expandable-table" aria-expanded="false">
                       <td>

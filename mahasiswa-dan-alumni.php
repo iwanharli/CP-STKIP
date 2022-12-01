@@ -80,7 +80,6 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">Profil</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
                         <li><a class="dropdown-item" href="visi-misi.php">Visi misi</a></li>
                         <li><a class="dropdown-item" href="struktur-organisasi.php">Struktur Organisasi&emsp;&ensp;</a></li>
                         <li><a class="dropdown-item" href="tujuan.php">Tujuan</a></li>

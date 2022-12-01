@@ -76,7 +76,6 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">Profil</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
                         <li class="active"><a class="dropdown-item" href="visi-misi.php">Visi misi</a></li>
                         <li><a class="dropdown-item" href="struktur-organisasi.php">Struktur Organisasi&emsp;&ensp;</a></li>
                         <li><a class="dropdown-item" href="tujuan.php">Tujuan</a></li>
@@ -123,13 +122,16 @@
                 <!-- <p>Let children creative and make a different</p> -->
             </div>
             <div class="row">
-                <div class="col-lg-12 about-text">
+                <div class="col-lg-6 about-text">
                     <ul class="about-list">
                         <li style="margin-top:30px;"><i class="fa fa-check-square-o"></i> Menyelenggarakan pendidikan dan pembelajaran yang selaras dengan perkembangan Iptek terkini. </li>
                         <li style="margin-top:30px;"><i class="fa fa-check-square-o"></i> Menyelenggarakan Tridharma perguruan tinggi yang berkontribusi pada inovasi dan pengembangan tekhnologi pendidikan. </li>
                         <li style="margin-top:30px;"><i class="fa fa-check-square-o"></i> Menyelenggarakan kerjasama dan tata kelola lembaga dengan prinsip Good Corporate Governance.</li>
                         <li style="margin-top:30px;"><i class="fa fa-check-square-o"></i> Menyelenggarakan pembudayaan nilai-nilai keislaman bagi seluruh civitas akademika yang berpedoman pada matan, keyakinan, cita-cita dan pedoman hidup islami Muhammadiyah.</li>
                     </ul>
+                </div>
+                <div class="col-lg-6 pt-5 pt-lg-0">
+                    <img src="img/about.jpg" alt="">
                 </div>
             </div>
         </div>
