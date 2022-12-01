@@ -1,70 +1,9 @@
-<?php
-    include "koneksi.php";
-?>
+<?php include "koneksi.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>STKIP MUHAMMADIYAH LUMAJANG</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="STKIP MUHAMMADIYAH LUMAJANG">
-	<meta name="keywords" content="stkip, muhammadiyah, lumajang">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
-	<link href="img/logo.ico" rel="shortcut icon"/>
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	
-  	<script src="https://kit.fontawesome.com/0161564ad7.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="_assets/_landing-page/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/themify-icons.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/magnific-popup.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/animate.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/owl.carousel.css"/>
-	<link rel="stylesheet" href="_assets/_landing-page/css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	<style type="text/css">
-		@media all and (min-width: 992px) {
-			.navbar .nav-item .dropdown-menu{ display: none; }
-			/* .navbar .nav-item:hover .nav-link{   } */
-			.navbar .nav-item:hover .dropdown-menu{ display: block; background-color: #020031;}
-			.nabvar .nav-item .dropdown-menu{ margin-top:0; }
-		}
-		
-		.button {
-            background-color: #020031;
-            border: none;
-            color: white;
-            padding: 0px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 0px 0px;
-        }
-
-        .button-round {border-radius: 50%;}
-
-        .widget .recent-post-widget .rp-thumb {
-            width: 50px;
-            height: 50px;
-            float: left;
-        }
-
-        .widget .recent-post-widget .rp-content {
-            padding-left: 0px;
-        }
-	</style>
+	<?php require "_partials/_assets-head.php"; ?>
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -73,60 +12,7 @@
 	</div>
 
 	<!-- header section -->
-	<header class="header-section">
-		<div class="container">
-			<!-- logo -->
-			<a href="." class="site-logo"><img src="img/logo2.png" width=60% height=140% style="margin-top: -20px;"></a>
-			<div class="nav-switch">
-				<i class="fa fa-bars"></i>
-			</div>
-			<div class="header-info">
-				<div class="hf-item">
-					<i class="fa fa-clock-o"></i>
-					<p><span>Jam Kerja:</span><font size=2px>Senin-Jumat: 08 AM - 06 PM</p></font>
-				</div>
-				<div class="hf-item">
-					<i class="fa fa-map-marker"></i>
-					<p><span>Alamat:</span><font size=2px>Jl. Brantas No.7, Jogoyudan, Kab. Lumajang</font>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<nav class="nav-section navbar navbar-expand-lg" style="padding:0%;">
-		<div class="container">
-			<div class="collapse navbar-collapse" id="main_nav">
-			<ul class="main-menu">
-				<li class="active"><a href="index.php">Home</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">Profil</a>
-					<ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
-                        <li><a class="dropdown-item" href="visi-misi.php">Visi misi</a></li>
-                        <li><a class="dropdown-item" href="struktur-organisasi.php">Struktur Organisasi&emsp;&ensp;</a></li>
-                        <li><a class="dropdown-item" href="tujuan.php">Tujuan</a></li>
-                    </ul>
-				</li>
-				<li><a href="pmb.php">Pendaftaran Mahasiswa Baru</a></li>
-				<li><a href="prodi-bahasa-dan-sastra.php">Prodi Bahasa & Sastra</a></li>
-				<li><a href="https://jurnal.stkipmuhlmj.ac.id/">Jurnal</a></li>
-				<li><a href="mahasiswa-dan-alumni.php">Mahasiswa & Alumni</a></li>
-				<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">Informasi</a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="berita.php">Berita</a></li>
-                        <li><a class="dropdown-item" href="pengumuman.php">Pengumuman</a></li>
-                    </ul>
-                </li>
-
-                <!-- End Item With Sub -->
-	            <li style="display: none;">
-	                <a href="auth/login.php" accesskey="c">login</a>
-	            </li>
-			</ul>
-			</div>
-		</div>
-	</nav>
+	<?php require "_partials/header.php"; ?>
 	<!-- Header section end -->
 
 	<!-- Hero section -->
@@ -454,80 +340,7 @@
 
 
 	<!-- Footer section -->
-	<footer class="footer-section">
-		<div class="container footer-top">
-			<div class="row">
-				<!-- widget -->
-				<div class="col-sm-6 col-lg-3 footer-widget">
-					<div class="about-widget">
-						<img src="img/logo2.png" alt="">
-						<p>orem ipsum dolor sit amet, consecter adipiscing elite. Donec minos varius, viverra justo ut, aliquet nisl.</p>
-						<div class="social pt-1">
-							<a href=""><i class="fa fa-twitter-square"></i></a>
-							<a href=""><i class="fa fa-facebook-square"></i></a>
-							<a href=""><i class="fa fa-google-plus-square"></i></a>
-							<a href=""><i class="fa fa-linkedin-square"></i></a>
-							<a href=""><i class="fa fa-rss-square"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- widget -->
-				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">USEFUL LINK</h6>
-					<div class="dobule-link">
-						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Events</a></li>
-							<li><a href="">Features</a></li>
-						</ul>
-						<ul>
-							<li><a href="">Policy</a></li>
-							<li><a href="">Term</a></li>
-							<li><a href="">Help</a></li>
-							<li><a href="">FAQs</a></li>
-							<li><a href="">Site map</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- widget -->
-				<div class="col-sm-6 col-lg-3 footer-widget">
-                    <h6 class="fw-title">Berita Terbaru</h6>
-                    <ul class="recent-post">
-                        <?php
-                            $query          = $koneksi->query("SELECT * FROM( SELECT * FROM berita WHERE status_berita=1 ORDER BY idBerita DESC LIMIT 2) AS sub ORDER BY idBerita DESC;");
-
-                            while ($baris   = mysqli_fetch_array($query)) {
-                        ?>
-                        <li>
-                            <p><?= $baris['judul_berita']; ?></p>
-                            <span><i class="fa fa-clock-o"></i><?= $baris['tanggal_berita']; ?></span>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-				<!-- widget -->
-				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">Kontak</h6>
-					<ul class="contact">
-						<li><p><i class="fa fa-map-marker"></i> Jl. Brantas No.7, Jogoyudan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316</p></li>
-						<li><p><i class="fa fa-phone"></i> 0334-881984</p></li>
-						<li><p><i class="fa fa-envelope"></i> stkipmuhlmj@gmail.com</p></li>
-						<li><p><i class="fa fa-clock-o"></i> Senin - Jumat, 08:00AM - 06:00 PM</p></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- copyright -->
-		<div class="copyright">
-			<div class="container">
-				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href=".">STKIPMUHLMJ</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>		
-		</div>
-	</footer>
+	<?php require "_partials/footer.php"; ?>
 	<!-- Footer section end-->
 
 

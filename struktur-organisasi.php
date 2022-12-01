@@ -14,7 +14,7 @@
 
     <!-- Stylesheets -->
     
-        <script src="https://kit.fontawesome.com/0161564ad7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0161564ad7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="_assets/_landing-page/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="_assets/_landing-page/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="_assets/_landing-page/css/themify-icons.css"/>
@@ -119,24 +119,34 @@
     <section class="about-section spad pt-0">
         <div class="container">
             <div class="section-title text-center">
-                <h3><font color="#f6783a">STRUKTUR ORGANISASI</font> - STKIP MUHAMMADIYAH LUMAJANG</h3>
-                <p>Let children creative and make a different</p>
+                <h3><font color="#f6783a">STRUKTUR ORGANISASI</font>
+                <p>STKIP MUHAMMADIYAH LUMAJANG
+                <p>PRODI PENDIDIKAN BAHASA DAN SASTRA INDONESIA
+                <p>Terakreditasi BAN-PT</h3>
+                <p>Nomor : 92/SK/BAN-PT/AK-PPJ/S/I/2022</p>
             </div>
             <div class="row">
-                <div class="col-lg-6 about-text">
-                    <h5>About us</h5>
-                    <p>Lorem ipsum dolor sitdoni amet, consectetur dont adipis elite. Vivamus interdum ultrices augue. Aenean dos cursus lania. Duis et fringilla leonardo. Mauris mattis phare sem, debut curus risus viverra sed.</p>
-                    <h5 class="pt-4">Our history</h5>
-                    <p>Led at felis arcu. Integer lorem lorem, tincidunt eu congue et, mattis ut ante. Nami suscipit, lectus id efficitur ornare, leo libero convalis nulla, vitae dignissim .</p>
-                    <ul class="about-list">
-                        <li><i class="fa fa-check-square-o"></i> University Faculties organise teaching and research into individual subjects.</li>
-                        <li><i class="fa fa-check-square-o"></i> The University is rich in history - its famous buildings attract visitors.</li>
-                        <li><i class="fa fa-check-square-o"></i> 50 years of people, and achievements that continue to transform.</li>
-                        <li><i class="fa fa-check-square-o"></i> The University's core values are as follows:freedom of thought.</li>
-                    </ul>
+                <div class="col-lg-12 text-left">
+                    <h5 style="margin-top:65px;">Ketua :</h5>
+                    <p>Eny Nur Wahyuni, S.H., M.Si</p>
+
+                    <h5 style="margin-top:30px;">Wakil Ketua I Bidang Akademik : </h5>
+                    <p>Drs. H. Mat Rawi, M.Pd</p>
+
+                    <h5 style="margin-top:30px;">Wakil Ketua II Bidang Administrasi dan Keuangan : </h5>
+                    <p>Ditho Natalia Disbha, S.Pd</p>
+
+                    <h5 style="margin-top:30px;">Wakil Ketua III Bagian Kemahasiswaan : </h5>
+                    <p>Hasyim Asyari, S.Si., M.M</p>
+
+                    <h5 style="margin-top:30px;">Bagian Lembaga Penjaminan Mutu Internal : </h5>
+                    <p>Wahyu Gasti Timur Gando, M.Pd</p>
                 </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <img src="img/about.jpg" alt="">
+                <div class="col-lg-12 text-right">
+                    <p style="margin-top:80px;">Lumajang, 12 Mei 2022
+                    <p>Ketua</p>
+
+                    <h5 style="margin-top:65px;">Eny Nur Wahyuni, S.H., M.Si</h5>
                 </div>
             </div>
         </div>

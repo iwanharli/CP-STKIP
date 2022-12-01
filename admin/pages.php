@@ -46,6 +46,10 @@ header("location:../auth/login.php");
       margin-left: 15px;
       width: 93.5%;
     }
+
+    #aPages{
+      color: red;
+    }
   </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -290,16 +294,23 @@ header("location:../auth/login.php");
                             <table class="table table-hover">
                               <tbody>
                                 <tr>
-                                  <td>Sejarah</td>
+                                  <td>
+                                    <a href="sejarah-update.php" id="aPages">Sejarah</a>
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Visi Misi</td>
+                                  <td>
+                                    <a href="visiMisi-update.php" id="aPages">Visi Misi</a>
                                 </tr>
                                 <tr>
-                                  <td>Struktur Organisasi</td>
+                                  <td>
+                                    <a href="strukturOrganisasi-update.php" id="aPages">Struktur Organisasi</a>
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Tujuan</td>
+                                  <td>
+                                    <a href="tujuan-update.php" id="aPages">Tujuan</a>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>

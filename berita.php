@@ -162,7 +162,9 @@
                                         <a href="berita-single.php?id=<?= $baris['idBerita']; ?>">
                                             <h2><?= $baris['judul_berita']; ?></h2>
                                         </a>
-                                        <p align="justify"><?= substr($baris['isi_berita'], 0, 500); ?></p>
+                                        <p align="justify">MCSE boot camps have its supporters and its detractors. Some people do not
+                                            understand why you should have to spend money on boot camp when you can get
+                                            the MCSE study materials yourself at a fraction.</p>
                                         <a href="berita-single.php?id=<?= $baris['idBerita']; ?>" class="blog_btn">View More</a>
                                     </div>
                                 </div>

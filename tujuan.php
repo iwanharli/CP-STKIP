@@ -121,23 +121,19 @@
         <div class="container">
             <div class="section-title text-center">
                 <h3><font color="#f6783a">TUJUAN</font> - STKIP MUHAMMADIYAH LUMAJANG</h3>
-                <p>Let children creative and make a different</p>
+                <!-- <p>Let children creative and make a different</p> -->
             </div>
             <div class="row">
-                <div class="col-lg-6 about-text">
-                    <h5>About us</h5>
-                    <p>Lorem ipsum dolor sitdoni amet, consectetur dont adipis elite. Vivamus interdum ultrices augue. Aenean dos cursus lania. Duis et fringilla leonardo. Mauris mattis phare sem, debut curus risus viverra sed.</p>
-                    <h5 class="pt-4">Our history</h5>
-                    <p>Led at felis arcu. Integer lorem lorem, tincidunt eu congue et, mattis ut ante. Nami suscipit, lectus id efficitur ornare, leo libero convalis nulla, vitae dignissim .</p>
+                <div class="col-lg-12 about-text">
+                    <!-- <h5 style="margin-top:30px;">Tujuan</h5> -->
                     <ul class="about-list">
-                        <li><i class="fa fa-check-square-o"></i> University Faculties organise teaching and research into individual subjects.</li>
-                        <li><i class="fa fa-check-square-o"></i> The University is rich in history - its famous buildings attract visitors.</li>
-                        <li><i class="fa fa-check-square-o"></i> 50 years of people, and achievements that continue to transform.</li>
-                        <li><i class="fa fa-check-square-o"></i> The University's core values are as follows:freedom of thought.</li>
+                        <li><i class="fa fa-check-square-o"></i> Menghasilkan lulusan yang menguasai iptek, kompetitif dan berjiwa islami. </li>
+                        <li><i class="fa fa-check-square-o"></i> Menghasilkan produk penelitian yang terbarukan, terpublikasi dan berkontribusi pada inovasi dan pengembangan tekhnologi pendidikan. </li>
+                        <li><i class="fa fa-check-square-o"></i> Mewujudkan kerjasama dan pengelolaan sekolah tinggi yang terencana, terorganisasi, produktif dan berkelanjutan. </li>
+                        <li><i class="fa fa-check-square-o"></i> Menghasilkan civitas akademika yang dapat menjadi suri tauladan serta menginternalisasikan nilai-nilai keislaman dan kemuhammadiyahan dalam kehidupan sehari-hari. </li>
                     </ul>
-                </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <img src="img/about.jpg" alt="">
+                    <hr style="margin-top:30px;">
+                    <p style="margin-top:30px;">Dengan perumusan visi-misi dan tujuan tersebut diharapkan pada tahun 2026 STKIP Muhammadiyah Lumajang dapat menjadi sekolah tinggi yang unggul dan kompetitif dalam sekala regional terlebih lagi dalam skala nasional dan international.</p>
                 </div>
             </div>
         </div>

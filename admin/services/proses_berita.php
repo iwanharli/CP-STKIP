@@ -104,7 +104,7 @@ if ($aksi == "edit_berita") {
                 move_uploaded_file($file_tmp, '../../img/blog/coverBerita/' . $nama);
 
                 $koneksi->query("UPDATE berita SET judul_berita='$edit_jb', tanggal_berita='$newDate', penulis_berita='$edit_pb', kategori_berita='$edit_kb', tags_berita='$edit_tb', isi_berita='$edit_ib', status_berita='$edit_sb', cover_berita='$nama', id_komentar='0' WHERE idBerita='$id'") or die(mysqli_error($koneksi));
-                header("refresh:0;url=../berita-view-post.php");
+                header("refresh:0;url=../jurnal-view-post.php");
             
             }else{
     
