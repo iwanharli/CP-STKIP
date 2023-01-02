@@ -1,5 +1,19 @@
 <?php
     include "koneksi.php";
+
+    if(isset($_GET['page']))
+    {
+        $page = $_GET['page'];
+    }
+    else
+    {
+        $page = 1;
+    }
+
+    $num_per_page   = 05;
+    $start_from     = ($page-1)*05;
+
+    $query          = $koneksi->query("SELECT * FROM pengumuman LIMIT $start_from,$num_per_page");
 ?>
 
 <!DOCTYPE html>
@@ -147,7 +161,7 @@
     <section class="blog-section spad pt-0">
         <div class="container">
             <div class="section-title text-center">
-                <h3><font color="#f6783a">Pengumuman</font> Terbaru</h3>
+                <h3><font color="#f6783a">Pengumuman</font></h3>
                 <p>Untuk Mahasiswa & Umum</p>
             </div>
 
@@ -155,8 +169,7 @@
                 <div class="col-xl-8">
 
                     <?php
-                        $query          = $koneksi->query("SELECT * FROM( SELECT * FROM pengumuman WHERE status_pengumuman=1 ORDER BY idPengumuman DESC LIMIT 20) AS sub ORDER BY idPengumuman DESC;");
-                        while ($baris   = mysqli_fetch_array($query)) {
+                        while ($baris   = mysqli_fetch_assoc($query)) {
                     ?>
                     <div class="blog-item">
                         <a href="pengumuman-single.php?id=<?= $baris['idPengumuman']; ?>">
@@ -168,10 +181,26 @@
                         </div>
                     </div>
                     <?php } ?>
+
                     <ul class="site-pageination">
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        <?php
+                            $pr_query       = $koneksi->query("SELECT * FROM pengumuman");
+                            $total_record   = mysqli_num_rows($pr_query);
+
+                            if($page>1){
+                                echo "<li><a href='pengumuman.php?page=".($page-1)."'><i class='fa fa-angle-left'></i></li></a>";
+                            }
+                            
+                            $total_page     = ceil($total_record/$num_per_page);
+
+                            for($i=1; $i<$total_page; $i++){
+                                echo "<li><a href='pengumuman.php?page=".$i."'> $i </a></li>";
+                            }
+
+                            if($i>$page){
+                                echo "<li><a href='pengumuman.php?page=".($page+1)."'><i class='fa fa-angle-right'></i></li></a>";
+                            }
+                        ?>
                     </ul>
                 </div>
                 <!-- sidebar -->
@@ -192,6 +221,7 @@
                                 $query          = $koneksi->query("SELECT * FROM( SELECT * FROM pengumuman ORDER BY idPengumuman DESC LIMIT 7) AS sub ORDER BY tanggal_pengumuman DESC;");
                                 $i = 1;
 
+                                
                                 while ($baris   = mysqli_fetch_array($query)) {
                             ?>
                             
